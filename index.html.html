@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Selectors, Pseudo Classes, and Pseudo Elements</title>
+</head>
+<style>
+    input[type=Name]{
+        border: 5px solid darkred
+    }
+
+    input[type=Age]{
+        border: 5px solid yellow
+    }
+    input[type=gender]{
+        border: 5px solid blueviolet
+    }
+    input[type=gender]{
+        border: 5px solid blue
+    }
+    input[type=passcode]{
+        border: 2px dashed red height: 50;
+    }
+    Ul{
+        color:rgba(31, 66, 178, 0.502)
+    }
+    h1+p{
+        color:darkgreen;
+    }
+    p+p{
+        color:chocolate
+    }
+    a:codingal{
+        color:red;
+    }
+    li:nth-child(1){
+        color:aqua;
+    }
+    div:not(.michael2){
+        border: 5px dashed red;
+    }
+    div:not(.michael1){
+        border: 5px dashed purple;
+    }
+    .mike::before{
+        content: "Michael, ";
+    }
+    .mike1{
+            color: palegreen;
+        }
+    .mike2::first-letter{
+         color:rgb(153, 226, 43);
+         font-size: larger;
+    }
+</style>
+<body>
+    <form>
+        <fieldset>
+            <legend>Form</legend>
+            <!--Advanced selector-->
+            <!--Attribute selector-->
+            <center>
+                <input type="Name" placeholder="Input Name"><br><br>
+                <input type="Age" placeholder="Input Age"><br><br>
+                Gender:
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br><br>
+                <input type="Passcode" placeholder="Passcode"><br><br>
+                <input type="Email" placeholder="Enter Your Email Address">
+        </center>
+    </fieldset>
+    </form>
+        <!--Child selector-->
+            <ul>
+                <li>Home</li>
+                <li>School</li>
+            </ul>
+        <!--Sibling Selector-->
+            <h1>Title</h1>
+            <p>This is codingal</p>
+            <p>Contact us at Codingal</p>
+        <!--Pseudo Classes-->
+        <!--Hover-->
+            <a href="#">Codingal</a>
+        <!--Nth Child-->
+            <ul>
+                <li>Pegiun</li>
+                <li>Kids</li>
+            </ul>
+    <!--NOT SELECTOR-->
+        <div class="michael1">
+            Codingal was found in 2022
+        </div><br>
+        <div class="michael2">
+            Codingal makes kids fall in love with coding
+        </div>
+    <!--Pseudo Elements-->
+        <p class="mike">This is my coding class</p>
+        <p class="mike1">I Love Coding</p>
+        <p class="mike2">Thank You</p>
+
+</body>
+</html>
